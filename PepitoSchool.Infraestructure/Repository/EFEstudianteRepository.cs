@@ -10,9 +10,9 @@ namespace PepitoSchool.Infraestructure.Repository
 {
     public class EFEstudianteRepository : IEstudianteRepository
     {
-        public IPepitoSchoolDBContext pepitoSchoolDBContext;
+        public IPepitoSchoolContext pepitoSchoolDBContext;
 
-        public EFEstudianteRepository(IPepitoSchoolDBContext pepitoSchoolDBContext)
+        public EFEstudianteRepository(IPepitoSchoolContext pepitoSchoolDBContext)
         {
             this.pepitoSchoolDBContext = pepitoSchoolDBContext;
         }
