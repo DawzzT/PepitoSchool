@@ -246,30 +246,33 @@ namespace PepitoSchool.Forms.Forms
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(310, 204);
+            this.btnAceptar.Location = new System.Drawing.Point(302, 197);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(83, 30);
             this.btnAceptar.TabIndex = 22;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(447, 204);
+            this.btnModificar.Location = new System.Drawing.Point(405, 197);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(85, 30);
             this.btnModificar.TabIndex = 23;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(535, 204);
+            this.btnCancelar.Location = new System.Drawing.Point(512, 197);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(87, 30);
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FrmEstudiante
             // 

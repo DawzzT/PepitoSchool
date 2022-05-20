@@ -82,7 +82,7 @@ namespace PepitoSchool.Infraestructure.Repository
                     throw new Exception($"El parametro carnet {lastnames} no tiene el formato correcto.");
                 }
 
-                return pepitoSchoolDBContext.Estudiantes.Where(x => x.Apellidos.Equals(lastnames, StringComparison.CurrentCultureIgnoreCase)).ToList(); ;
+                return pepitoSchoolDBContext.Estudiantes.Where(x => x.Apellidos.Equals(lastnames)).ToList(); ;
             }
             catch
             {
@@ -99,7 +99,7 @@ namespace PepitoSchool.Infraestructure.Repository
                     throw new Exception($"El parametro carnet {names} no tiene el formato correcto.");
                 }
 
-                return pepitoSchoolDBContext.Estudiantes.Where(x => x.Apellidos.Equals(names, StringComparison.CurrentCultureIgnoreCase)).ToList(); ;
+                return pepitoSchoolDBContext.Estudiantes.Where(x => x.Nombres.Equals(names)).ToList(); ;
             }
             catch
             {

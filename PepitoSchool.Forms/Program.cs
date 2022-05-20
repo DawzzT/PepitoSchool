@@ -27,21 +27,21 @@ namespace DepreciationDBApp
         [STAThread]
         static void Main()
         {
+            try
+            {
+                //appsettings daba error por el path asi que lo cree directamente en el PepitoSchool.Form/bin/debug/net5.0-windows
+                Configuration = new ConfigurationBuilder()
+               .AddJsonFile("appsettings.json")
+               .AddEnvironmentVariables().Build();
+            }
+            catch (Exception)
+            {
+                throw;
+
+            }
+           
+
             
-            Configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
-                .AddEnvironmentVariables().Build();
-
-            //var builder = new HostBuilder().ConfigureServices((hostContext, services) =>
-            //{
-            //    services.AddDbContext<DepreciationDBContext>(options =>
-            //    {
-            //        options.UseSqlServer(Configuration.GetConnectionString("Default"));
-            //    });
-            //});
-
-            //var host = builder.Build();
-
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

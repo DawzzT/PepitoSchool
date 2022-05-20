@@ -20,5 +20,10 @@
     <ProjectReference Include="..\PepitoSchool.Domain\PepitoSchool.Domain.csproj" />
     <ProjectReference Include="..\PepitoSchool.Infraestructure\PepitoSchool.Infraestructure.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	
 </Project>
